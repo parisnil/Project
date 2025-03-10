@@ -1,1 +1,10 @@
+.kfc {
+    width: 100%;
+}
+
+:root {
+    --röd: rgb(155, 3, 3);
+    --gul: rgb(252, 249, 65);
+    --vit: white;
+}
 
