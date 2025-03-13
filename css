@@ -1,10 +1,37 @@
 .kfc {
-    width: 100%;
+  width: 100%;
 }
 
 :root {
-    --röd: rgb(155, 3, 3);
-    --gul: rgb(252, 249, 65);
-    --vit: white;
+  --röd: rgb(202, 53, 53);
+  --svart: rgb(7, 7, 1);
+  --grå: rgb(33, 33, 32);
+  --vit: white;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+nav {
+  display: inline-block;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--grå);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: var(--vit);
+  background-color: var(--röd);
+}
