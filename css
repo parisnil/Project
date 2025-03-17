@@ -4,17 +4,21 @@
 
 :root {
   --röd: rgb(202, 53, 53);
-  --svart: rgb(7, 7, 1);
+  --röd2: rgb(231, 65, 65); 
   --grå: rgb(33, 33, 32);
   --vit: white;
 }
 
+h1,h2,h3{
+  color: var(--röd);
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
 nav {
   display: inline-block;
@@ -33,5 +37,11 @@ nav a {
 
 nav a:hover {
   color: var(--vit);
-  background-color: var(--röd);
+  background-color: var(--röd2);
+}
+
+#välkomma{
+  text-align: center;
+  margin-top: 80px;
+  
 }
