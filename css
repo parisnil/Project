@@ -76,6 +76,6 @@ nav a:hover {
 #välkomma {
   text-align: center;
   margin: 40px;
-  border: 2px ridge var(--grå2);
+  border: 2px dashed var(--grå2);
   padding: 50px;
 }
