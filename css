@@ -1,23 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: var(--grå);
+  display: flex;
+  flex-direction: column;
+}
+
 .kfc {
   width: 100%;
+  height: auto;
+    display: block;
 }
 
 :root {
-  --röd: rgb(202, 53, 53);
-  --röd2: rgb(231, 65, 65); 
-  --grå: rgb(33, 33, 32);
+  --röd: #cb3737;
+  --röd2: #e74141;
+  --grå: #30302f;
+  --grå2: #ddd;
   --vit: white;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   color: var(--röd);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-left: 30px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -25,6 +57,7 @@ nav {
   flex-direction: column;
   gap: 15px;
   align-items: flex-end;
+  margin-top: 60px;
 }
 
 nav a {
@@ -40,8 +73,9 @@ nav a:hover {
   background-color: var(--röd2);
 }
 
-#välkomma{
+#välkomma {
   text-align: center;
-  margin-top: 80px;
-  
+  margin: 40px;
+  border: 2px ridge var(--grå2);
+  padding: 50px;
 }
