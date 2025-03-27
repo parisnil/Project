@@ -79,3 +79,21 @@ nav a:hover {
   border: 2px dashed var(--grå2);
   padding: 50px;
 }
+
+table {
+  width: 80%;
+  margin: 20px;
+  border-collapse: collapse;
+  background-color: var(--vit);
+  box-shadow: 0px 4px 8px var(--grå);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: var(--röd);
+  color: var(--vit);
+  font-size: 1.2em;
+}
+
+
