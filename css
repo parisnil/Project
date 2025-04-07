@@ -15,7 +15,7 @@ body {
 .kfc {
   width: 100%;
   height: auto;
-    display: block;
+  display: block;
 }
 
 :root {
@@ -80,9 +80,13 @@ nav a:hover {
   padding: 50px;
 }
 
+#meny {
+text-align: center;
+}
+
 table {
   width: 80%;
-  margin: 20px;
+  margin: 20px auto;
   border-collapse: collapse;
   background-color: var(--vit);
   box-shadow: 0px 4px 8px var(--grå);
@@ -96,4 +100,50 @@ thead {
   font-size: 1.2em;
 }
 
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--grå2);
+}
+
+td:first-child,
+tfoot {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f7f7;
+}
+
+tfoot {
+  text-align: center;
+  background-color: var(--röd);
+  color: var(--vit);
+}
+
+#nyhet {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.nyhet-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nyhet-item {
+  background: var(--grå2);
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.nyhet-item img {
+  width: 100%;
+  border-radius: 5px;
+}
 
