@@ -177,3 +177,39 @@ tfoot {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bucket {
+  width: 100%;
+}
+
+#bokningsruta{
+  margin: 5% auto;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid var(--grå3);
+  background-color: #f3f2f2;
+}
+
+#ruta{
+  margin: 2%;
+}
+
+input{
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid var(--grå3);
+  border-radius: 4px;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: var(--röd2);
+  color: var(--vit);
+  border-radius: 4px;
+  border: none;
+}
+
+button:hover{
+  background-color: var(--röd);
+}
