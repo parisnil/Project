@@ -23,12 +23,16 @@ body {
   --röd2: #e74141;
   --grå: #30302f;
   --grå2: #e7e5e5;
+  --grå3: #b0aeae;
+  --grå4: #f8f7f7;
   --vit: white;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   color: var(--röd);
 }
 
@@ -43,6 +47,11 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+h4,
+h5 {
+  margin-top: 20px;
 }
 
 header {
@@ -182,34 +191,78 @@ tfoot {
   width: 100%;
 }
 
-#bokningsruta{
-  margin: 5% auto;
-  width: 500px;
-  padding: 20px;
+#bokningsruta {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
   border: 1px solid var(--grå3);
-  background-color: #f3f2f2;
+  background-color: var(--grå4);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--grå);  
 }
 
-#ruta{
-  margin: 2%;
+label {
+  font-size: 0.9rem; 
+  color: var(--grå); 
+  display: block;
+  margin: 10px 0 5px;
 }
 
-input{
-  margin-bottom: 10px;
+input {
+  width: 100%;
   padding: 10px;
-  width: 300px;
   border: 1px solid var(--grå3);
-  border-radius: 4px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
-button{
-  padding: 10px 20px;
+input:focus {
+  border-color: var(--röd2);
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
   background-color: var(--röd2);
   color: var(--vit);
-  border-radius: 4px;
+  border-radius: 6px;
   border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button:hover{
+button:hover {
   background-color: var(--röd);
+}
+
+#info {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ruta {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.mapp {
+  margin-top: 15px;
 }
