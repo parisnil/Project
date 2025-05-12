@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KFCs hemsida</title>
-    <link rel="stylesheet" href="projekt.css" />
+    <link rel="stylesheet" href="p.css" />
   </head>
   <body>
     <header>
       <h1>KFC</h1>
 
-      <nav>
+      <nav class="navigera">
         <a href="#välkomma">Välkommen</a>
-        <a href="#meny">Meny</a>
+        <a href="p2.html">Meny</a>
         <a href="#nyhet">Nyheter</a>
-        <a href="boka.html">Boka bord</a>
-        <a href="info.html">Info</a>
+        <a href="#boka">Boka bord</a>
+        <a href="#info">Info</a>
       </nav>
     </header>
     <img class="bilder kfc" src="kfc.avif" alt="kfc logo" />
@@ -30,72 +30,6 @@
           kyckling. <br />
           Varmt välkomna!
         </p>
-      </section>
-
-      <section id="meny">
-        <h2>MENY</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Kategori</th>
-              <th>Rätt</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="3">Hamburgare</td>
-              <td>Bacon & Cheese</td>
-            </tr>
-            <tr>
-              <td>Zinger</td>
-            </tr>
-            <tr>
-              <td>Spicy Cheese</td>
-            </tr>
-            <tr>
-              <td rowspan="2">Buckets</td>
-              <td>Big Mix Buckets Meal</td>
-            </tr>
-            <tr>
-              <td>Hot Wings Bucket 10st</td>
-            </tr>
-            <tr>
-              <td rowspan="3">Combo Meals</td>
-              <td>Bacon & Cheese Burger Meal</td>
-            </tr>
-            <tr>
-              <td>Zinger Hot Combo Meal</td>
-            </tr>
-            <tr>
-              <td>Spicy Cheese Combo Meal</td>
-            </tr>
-            <tr>
-              <td rowspan="2">Kids Meal</td>
-              <td>Crispy Burger Meal</td>
-            </tr>
-            <tr>
-              <td>Popcorn Chicken Meal</td>
-            </tr>
-            <tr>
-              <td rowspan="4">Tillbehör</td>
-              <td>Popcorn Chicken</td>
-            </tr>
-            <tr>
-              <td>Cheese Fries</td>
-            </tr>
-            <tr>
-              <td>Chili Cheese</td>
-            </tr>
-            <tr>
-              <td>Majs</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="2">Välkommen att beställa!</td>
-            </tr>
-          </tfoot>
-        </table>
       </section>
 
       <section id="nyhet">
@@ -118,7 +52,7 @@
       <section id="boka">
         <h2>BOKA BORD</h2>
         <div class="boka">
-          <h3 class="boka-container">Boka bord</h3>
+          <a class="boka-container" href="p1.html">Boka bord</a>
           <h3 class="boka-container">Kontakta oss</h3>
         </div>
 
@@ -128,39 +62,13 @@
           avbokning: vänligen avboka minst 12 timmar innan din bokad tid. Tack!
           Varmt välkomma!
         </p>
-
-        <form id="bokningsruta">
-          <h3>Bokning</h3>
-
-          <label for="antalPersoner">Antal personer</label>
-          <input type="number" name="antalPersoner" min="1" max="10" required />
-
-          <label for="datum">Datum</label>
-          <input type="date" name="datum" required />
-
-          <label for="tid">Tid</label>
-          <input type="time" name="tid" required />
-
-          <h4>Kontaktuppgifter</h4>
-
-          <label for="namn">Namn</label>
-          <input type="text" name="namn" required />
-
-          <label for="epost">E-post</label>
-          <input type="email" name="epost" required />
-
-          <label for="telefon">Telefon</label>
-          <input type="tel" name="telefon" required />
-
-          <button id="bokabutton" type="submit">Boka</button>
-        </form>
       </section>
 
       <section id="info">
         <div class="ruta">
           <h3>Kontakt</h3>
           <ul>
-            <li>Adress: Sankt Eriksgatan 118, 113 31 Stockholm</li>
+            <li>Adress: kfcgatan 118, 123 11 Stockholm</li>
             <li>Telefone: 02-123 456</li>
             <li>Mail: info@kfc.se</li>
           </ul>
@@ -195,6 +103,6 @@
       <p>2025 KFC. Alla rättigheter behållas.</p>
     </footer>
 
-    <script src="projekt.js"></script>
+    <script src="p.js"></script>
   </body>
 </html>
