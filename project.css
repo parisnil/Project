@@ -269,17 +269,9 @@ li {
   #info {
     flex-direction: column;
   }
-  header{
-    align-items: flex-start;
-  }
-  nav{
-    margin-top: 100px;
-    align-items: flex-start;
-    gap: 10px;
 
-  }
   footer{
-    padding:1px
+    padding:0%
   }
 }
 
