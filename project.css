@@ -11,8 +11,11 @@ body {
   flex-direction: column;
 }
 
-.kfc {
+.kfc, .nyhet-item img, footer{
   width: 100%;
+
+}
+.kfc {
   height: auto;
   display: block;
 }
@@ -49,8 +52,12 @@ h3 {
 }
 
 h4,
-h5 {
+h5, .nyhet-container, .nyhet-item{
   margin-top: 20px;
+}
+
+#välkomma, #meny, tfoot, #nyhet, .boka-container, #kontakt, footer{
+  text-align: center;
 }
 
 header {
@@ -82,22 +89,17 @@ nav a:hover {
 }
 
 #välkomma {
-  text-align: center;
   margin: 40px;
   border: 2px dashed var(--grå2);
   padding: 50px;
 }
 
-#meny {
-text-align: center;
-}
-
 table {
   width: 80%;
   margin: 20px auto;
-  border-collapse: collapse;
   background-color: var(--vit);
   box-shadow: 0px 4px 8px var(--grå);
+  border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -121,45 +123,40 @@ tfoot {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f8f7f7;
+  background-color: var(--grå4);
 }
 
 tfoot {
-  text-align: center;
   background-color: var(--röd);
   color: var(--vit);
-}
-
-#nyhet {
-  margin-top: 50px;
-  text-align: center;
 }
 
 .nyhet-container {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
 }
 
 .nyhet-item {
-  background: var(--grå2);
+  background-color: var(--grå2);
   padding: 15px;
-  border-radius: 5px;
   width: 300px;
+}
+
+.nyhet-container, .nyhet-item{
   margin-top: 20px;
 }
 
-.nyhet-item img {
-  width: 100%;
+.nyhet-item, .nyhet-item img{
   border-radius: 5px;
 }
 
-#boka, #info {
+#boka,
+#info {
   margin-left: 15px;
 }
 
-#boka{
+#boka, #nyhet {
   margin-top: 50px;
 }
 
@@ -170,14 +167,15 @@ tfoot {
 
 .boka-container {
   box-shadow: 0px 0px 2px var(--grå);
-  border-radius: 10px;
   padding: 5px;
-  text-align: center;
   width: 150px;
 }
 
+.boka-container, #bokningsruta{
+  border-radius: 10px;
+}
+
 #kontakt {
-  text-align: center;
   padding: 100px;
   background-image: url(kfc-kyckling.jpg);
   background-size: cover;
@@ -193,23 +191,24 @@ tfoot {
   max-width: 500px;
   margin: 40px auto;
   padding: 30px;
-  border: 1px solid var(--grå3);
   background-color: var(--grå4);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px var(--grå);  
+  box-shadow: 0 4px 12px var(--grå);
 }
 
 label {
   font-size: 0.9rem; 
-  color: var(--grå); 
+  color: var(--grå);
   display: block;
   margin: 10px 0 5px;
+}
+
+#bokningsruta, input {
+  border: 1px solid var(--grå3);
 }
 
 input {
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--grå3);
   border-radius: 6px;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -221,7 +220,7 @@ input:focus {
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 12px 20px;
   background-color: var(--röd2);
   color: var(--vit);
@@ -265,6 +264,14 @@ li {
   margin-top: 15px;
 }
 
+footer {
+  background-color: #333;
+  color: var(--vit);
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+}
+
 @media (max-width: 600px) {
   #info {
     flex-direction: column;
@@ -274,4 +281,3 @@ li {
     padding:0%
   }
 }
-
