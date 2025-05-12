@@ -264,3 +264,22 @@ li {
 .mapp {
   margin-top: 15px;
 }
+
+@media (max-width: 600px) {
+  #info {
+    flex-direction: column;
+  }
+  header{
+    align-items: flex-start;
+  }
+  nav{
+    margin-top: 100px;
+    align-items: flex-start;
+    gap: 10px;
+
+  }
+  footer{
+    padding:1px
+  }
+}
+
