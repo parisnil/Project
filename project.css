@@ -264,6 +264,13 @@ li {
   margin-top: 15px;
 }
 
+.mapp iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  margin-top: 15px;
+}
+
 footer {
   background-color: #333;
   color: var(--vit);
@@ -280,19 +287,18 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 2rem;
   }
 
-  .nyhet-container,
+  .boka {
+    align-items: center;
+  }
+
   .boka,
   #info {
     flex-direction: column;
-  }
-
-  .nyhet-container.boka {
-    align-items: center;
   }
 
   .nyhet-item,
@@ -359,4 +365,5 @@ footer {
     font-size: 0.75rem;
     position: static;
   }
+}
 }
