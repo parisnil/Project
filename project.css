@@ -11,9 +11,11 @@ body {
   flex-direction: column;
 }
 
-.kfc, .nyhet-item img, footer{
+.kfc,
+.nyhet-item img,
+footer,
+.bucket {
   width: 100%;
-
 }
 .kfc {
   height: auto;
@@ -52,11 +54,19 @@ h3 {
 }
 
 h4,
-h5, .nyhet-container, .nyhet-item{
+h5,
+.nyhet-container,
+.nyhet-item {
   margin-top: 20px;
 }
 
-#välkomma, #meny, tfoot, #nyhet, .boka-container, #kontakt, footer{
+#välkomma,
+#meny,
+tfoot,
+#nyhet,
+.boka-container,
+#kontakt,
+footer {
   text-align: center;
 }
 
@@ -67,7 +77,7 @@ header {
   margin-bottom: 10px;
 }
 
-nav {
+.navigera {
   display: inline-block;
   flex-direction: column;
   gap: 15px;
@@ -75,7 +85,7 @@ nav {
   margin-top: 60px;
 }
 
-nav a {
+.navigera a {
   text-decoration: none;
   color: var(--grå);
   font-weight: bold;
@@ -83,7 +93,7 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover {
+.navigera a:hover {
   color: var(--vit);
   background-color: var(--röd2);
 }
@@ -143,11 +153,13 @@ tfoot {
   width: 300px;
 }
 
-.nyhet-container, .nyhet-item{
+.nyhet-container,
+.nyhet-item {
   margin-top: 20px;
 }
 
-.nyhet-item, .nyhet-item img{
+.nyhet-item,
+.nyhet-item img {
   border-radius: 5px;
 }
 
@@ -156,7 +168,9 @@ tfoot {
   margin-left: 15px;
 }
 
-#boka, #nyhet {
+#boka,
+#nyhet,
+#info {
   margin-top: 50px;
 }
 
@@ -166,12 +180,18 @@ tfoot {
 }
 
 .boka-container {
-  box-shadow: 0px 0px 2px var(--grå);
-  padding: 5px;
+  display: inline-block;
+  padding: 10px;
   width: 150px;
+  box-shadow: 0px 0px 2px var(--grå);
+  background-color: var(--vit);
+  color: var(--grå);
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.boka-container, #bokningsruta{
+.boka-container,
+#bokningsruta {
   border-radius: 10px;
 }
 
@@ -183,10 +203,6 @@ tfoot {
   background-repeat: no-repeat;
 }
 
-.bucket {
-  width: 100%;
-}
-
 #bokningsruta {
   max-width: 500px;
   margin: 40px auto;
@@ -196,13 +212,14 @@ tfoot {
 }
 
 label {
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
   color: var(--grå);
   display: block;
   margin: 10px 0 5px;
 }
 
-#bokningsruta, input {
+#bokningsruta,
+input {
   border: 1px solid var(--grå3);
 }
 
@@ -365,5 +382,4 @@ footer {
     font-size: 0.75rem;
     position: static;
   }
-}
 }
